@@ -1,0 +1,543 @@
+@import url(https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+html,
+body,
+
+.container{
+    max-width: 1380px;
+    width: 100%;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+button{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+.header{
+    padding: 50px 0;
+}
+.header-wrap{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header-nav{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+
+}
+.header-nav-item{
+    font-weight: 500;
+    font-size: 20px;
+    color: #263238;
+}
+.header-button{
+    border: 2px solid #263238;
+    border-radius: 5px;
+    font-weight: 400;
+    font-size: 24px;
+    color: #000;
+    padding: 20px 60px;
+}
+.header-menu{
+    display: none;
+}
+@media screen and (max-width:992px) {
+    .header{
+        padding: 30px 0px;
+    }
+    .header-nav-item{
+        font-size: 16px;
+    }
+    .header-button{
+        padding: 10px 40px;
+    }
+}
+@media screen and (max-width:767px) {
+    .header-nav,
+    .header-button{
+        display: none;
+    }
+    .header-menu{
+        display: block;
+    }
+
+}
+
+/* Banner STart */
+    .banner-wrap{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+    .banner-content{
+        width: 50%;
+        position: relative;
+    }
+    .banner-image{
+    width: 50%;
+    }
+    .banner-image img{
+        width: 100%;
+        height: 100%;
+        }
+    .banner-title{
+        font-weight: 600;
+        font-size: 36px;
+        line-height: 125%;
+        color: #000;
+        max-width: 385px;
+        margin-bottom: 40px;
+    }
+    .banner-subtitle{
+        font-weight: 400;
+        font-size: 16px;
+        color: #8f95a5;
+        margin-bottom: 60px;
+    }
+    .banner-button{
+        border-radius: 15px;
+        font-weight: 400;
+        font-size: 36px;
+        color: #ffffff;
+        padding: 32px 110px;
+        background-color: #263238;
+        border: 1px solid #263238;
+    }
+    .banner-button:hover{
+        color: #263238;
+        background-color: transparent;
+    }
+    .banner-lamp{
+        transform: rotate(0deg);
+        position: absolute;
+        right: 50px;
+        top: 50px;
+    }
+
+    @media screen and (max-width:992px) {
+        .banner-title{
+            font-size: 48px;
+        }
+        .banner-subtitle{
+            font-size: 20px;
+        }
+        .banner-button{
+            padding: 20px 80px;
+        }
+        .banner-lamp{
+            display: none;
+        }
+        
+        
+    }
+    @media screen and (max-width:767px) {
+        .banner-wrap{
+            flex-direction: column-reverse;
+        }
+        .banner-title{
+            font-size: 36px;
+            margin-bottom: 25px;
+            max-width: 100%;
+            text-align: center;
+        }
+        .banner-subtitle{
+            font-size: 16px;
+            margin-bottom: 40px;
+            max-width: 100%;
+            text-align: center;
+        }
+        .banner-button{
+            padding: 20px 60px;
+        }
+        .banner-content{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        .banner-lamp{
+          display: none;
+    }
+    @media  screen and (max-width:575px) {
+        .banner-button{
+            width: 100px;
+        }
+        .banner-lamp{
+            display: none;
+        }
+        
+    }
+}
+/* Banner End */
+
+.about-wrap{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+.about-content{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.about-title{
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 167%;
+    color: #000;
+}
+.about-subtitle{
+    font-weight: 400;
+    font-size: 20px;
+    color: #8f95a5;
+}
+.about-button{
+    border-radius: 15px;
+    font-weight: 400;
+    font-size: 36px;
+    color: #ffffff;
+    padding: 32px 110px;
+    background-color: #000;
+
+}
+
+.about-miniALL{
+    display: flex;
+    justify-content: flex-start; 
+    gap: 160px;
+    h1{
+        font-weight: 600;
+font-size: 48px;
+line-height: 167%;
+color: #2a3246;
+    }
+    P{
+        font-weight: 400;
+        font-size: 20px;
+        color: #8f95a5;
+    }
+}
+
+@media screen and (max-width:992px) {
+    .about-title{
+        font-size: 48px;
+    }
+    .about-subtitle{
+        font-size: 20px;
+    }
+    .about-button{
+        padding: 20px 80px;
+    }
+    
+}
+@media screen and (max-width:767px) {
+    .about-wrap{
+        flex-direction: column-reverse;
+    }
+    .about-title{
+        font-size: 36px;
+        margin-bottom: 25px;
+        max-width: 100%;
+        text-align: center;
+    }
+    .about-subtitle{
+        font-size: 16px;
+        margin-bottom: 40px;
+        max-width: 100%;
+        text-align: center;
+    }
+    .banner-button{
+        padding: 20px 60px;
+    }
+    .about-content{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .banner-lamp{
+      display: none;
+}
+@media  screen and (max-width:575px) {
+    .about-button{
+        width: 100px;
+    }
+    .about-content{
+        flex-direction: column;
+    }
+}
+}
+/* Banner End */
+
+
+/* Pricing Start */
+.pricing-title{
+    font-weight: 400px;
+    font-size: 48px;
+    line-height: 167%;
+    color: #000;
+    text-align: center;
+}
+.pricing-cards {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 24px;
+    }
+    
+    .pricing-card {
+        width: 32%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        flex-grow: 1;
+        gap: 30px;
+        justify-content: space-between;
+    }
+    
+    .pricing-card-img {
+        width: 300px;
+
+    }
+    
+    .pricing-card-img img {
+        width: 100%;
+        height: 100%;
+    }
+    
+    .pricing-card-title {
+      font-weight: 600;
+        font-size: 30px;
+        line-height: 160%;
+        color: #262338;
+    }
+    
+.pricing-card-subtitle {
+    font-weight: 400;
+    font-size: 20px;
+    color: #8f95a5;
+
+    }
+    
+    .pricing-card-price {
+        background: #eee;
+        border-radius: 5px;
+        padding: 0 24px;
+        
+    }
+    
+    .price-one {
+        font-weight: 400;
+       font-size: 30px;
+       color: #262338;
+       
+    }
+    
+    .price-two {
+       font-weight: 400;
+      font-size: 18px;
+        color: #546269;
+    }
+    
+
+    @media screen and (max-width: 992px) {
+        .pricing-card-title {
+            font-size: 22px;
+    }
+    .pricing-card-subtitle {
+    font-size: 16px;
+
+    .pricing-card-price {
+    padding:0 12px;
+    }
+    .price-one {
+    font-size: 24px;
+    }
+    .price-two {
+    font-size: 16px;
+    }
+}
+    }
+    @media screen and (max-width: 767px) {
+    .pricing-title {
+        margin-top: 100px;
+    }
+    .pricing-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .pricing-card {
+    width: 60%;
+    align-items: center;
+    }
+
+    .pricing-card-title {
+    font-size: 28px;
+    }
+    .pricing-card-subtitle {
+    font-size: 20px;
+    }
+    @media screen and (max-width: 575px) {
+    .pricing-card {
+    width: 100%;
+    }
+}
+    }
+    /* PRICING END */
+
+
+    .contact-block{
+        display: none;
+        font-weight: 600;
+        font-size: 30px;
+        line-height: 267%;
+        color: #000;
+    }
+    .contact{
+        margin: 100px;
+    }
+    .contact-wrap{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .contact-content{
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+    }
+    .contact-title{
+        font-weight: 600px;
+        font-size: 48px;
+        color:black;
+        line-height: 167%;
+    }
+    .contact-subtitle{
+        font-weight: 400px;
+        font-size: 20px;
+        font-weight: 400;
+        color: #8f95a5;
+    }
+    .contact-form{
+        display: flex;
+        align-items: center;
+        gap: 12px;
+    
+    }
+    .contact-input{
+        border: 1px solid #8f95a5;
+        border-radius: 10px;
+        width: 450px;
+        height: 80px;
+        font-weight: 400;
+        font-size: 16px;
+        color: #8f95a5;
+    }
+    .contact-button{
+    border-radius: 10px;
+    width: 264px;
+    height: 80px;
+    background: #263238;
+    font-weight: 500px;
+    font-size: 20px;
+    color: #fff;
+    border: 1px solid #263238;
+    padding: 25px 80px;
+    transition: all .3s ease-in-out;
+    }
+    .contact-button:hover{
+        background-color: transparent;
+        color: #263238;
+    }
+
+
+
+    @media screen and (max-width:992px) {
+        .contact-title{
+            font: 36px;
+        }
+        .contact-subtitle{
+            fonts: 17px;
+        }
+        .contact-content{
+            gap: 25px;
+        }
+        .contact-input{
+            padding: 20px;
+            width: 320px;
+        }
+        .contact-button{
+            padding: 20px 50px;
+            font-size: 16px;
+        }
+    }
+
+    @media screen and (max-width:767px) {
+        .contact-wrap{
+            flex-direction: column;
+        }
+        .contact-title{
+            display: none;
+        }
+        .contact-block{
+            display: block;
+        }
+        .contact-img{
+            width: 80%;
+        }
+        .contact-content{
+            width: 100%;
+        }
+        .contact-subtitle{
+            text-align: center;
+        }
+        .contact-form{
+            justify-content: center;
+        }
+    }
+
+
+
+
+
+
+
+    .footer-wrap{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-top: 1px solid #c4c4c4;
+        padding: 30px 0;
+    }
+    .footer-text{
+        font-weight: 400;
+        font-size: 24px;
+        color: #8f95a5;
+    }
+    @media screen and(max-width:992px) {
+        .footer-text{
+        font-size: 13px;
+        }
+    }
+    @media screen and(max-width:767px) {
+        .footer-wrap{
+        flex-direction: column;
+        }
+    }
